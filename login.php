@@ -96,7 +96,11 @@ if (isset($_POST["login"])) {
                                 <?php } else { ?>
                                     <label class="text-white" for="password">Password *</label>
                                 <?php } ?>
-                            <input class="px-3 py-1 rounded-md" type="password" name="password" id="password" placeholder="admin" required>
+                            <input class="px-3 py-1 rounded-md text-s" type="password" name="password" id="password" placeholder="admin" required>
+                            <div class="flex gap-3">
+                                <input type="checkbox" id="show" onclick="myFunction()">
+                                <label class="text-white" for="show">Show Password</label>
+                            </div>
                         </div>
                         <button class="w-full rounded-md text-white bg-cyan-400 text-center text-lg uppercase font-bold py-1 hover:bg-cyan-600 transition-colors duration-300" type="submit" name="login">
                             Sign In
@@ -118,5 +122,15 @@ if (isset($_POST["login"])) {
                 <img class=" h-dvh" src="assets/img/aside.jpg" alt="">
             </div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 </html>

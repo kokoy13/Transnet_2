@@ -129,10 +129,16 @@
                     </div>
                 </div>
             </div>
+            <div class="flex gap-5 justify-center">
+                    <!-- SUBMIT BUTTON -->
+                <button class="bg-cyan-500 shadow-[1px_1px_3px_rgba(0,0,0,0.5)] px-5 py-1 rounded-full text-white w-max self-center text-xl hover:shadow-none transition duration-300" onclick="window.location.href='customers.php'">
+                    Kembali
+                </button>
                 <!-- SUBMIT BUTTON -->
-            <button class="bg-cyan-500 shadow-[1px_1px_3px_rgba(0,0,0,0.5)] px-5 py-1 rounded-full text-white w-max self-center text-xl hover:shadow-none transition duration-300" type="submit" name="submit">
-                Tambahkan
-            </button>
+                <button class="bg-cyan-500 shadow-[1px_1px_3px_rgba(0,0,0,0.5)] px-5 py-1 rounded-full text-white w-max self-center text-xl hover:shadow-none transition duration-300" type="submit" name="submit">
+                    Tambahkan
+                </button>
+            </div>
         </form>
         <img src="../assets/img/aside.jpg" class="w-[500px] h-full rounded-r-xl" alt="">
     </div>

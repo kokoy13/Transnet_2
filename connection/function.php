@@ -38,6 +38,14 @@ function create()
     $olt = !empty($_POST["olt"]) ? htmlspecialchars($_POST["olt"]) : NULL;
 
     //QUERY ADD CUSTOMERS
+    $result = mysqli_query($conn,"SELECT customers.customerid, ont.SNONT, ont.olt FROM customers join ont using(CustomerID) WHERE customers.customerid = '$customerid' OR ont.SNONT = '$snont' OR ont.olt = '$olt'");
+
+    if(mysqli_fetch_assoc($result)){
+        echo "<script>
+            alert('Customer ID atau SNONT telah digunakan');
+        </script>";
+        return false;
+    }
 
     //QUERY TABLE CUSTOMERS
     mysqli_query($conn, "INSERT INTO customers VALUES('$customerid','$customername','$contact','$address','$latitude','$longitude')");
