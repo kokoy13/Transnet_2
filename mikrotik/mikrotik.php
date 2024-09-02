@@ -11,6 +11,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="http://103.143.71.205/"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <!-- FONT LINK Nunito -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +29,17 @@
         include('../navbar/navbar.php');
     ?>
     <main class="overflow-auto w-dvw">
-    <header class="bg-cyan-400 px-4 py-[20px]">
-        <div class="flex flex-col gap-1">
-            <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
-            <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
-            <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
+        <header class="bg-cyan-400 px-4 py-[20px]">
+            <div class="flex flex-col gap-1">
+                <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
+                <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
+                <div class="bg-gray-800 rounded-full px-4 py-[2px] w-max"></div>
+            </div>
+        </header>
+        <div id="content">
+
         </div>
-    </header>
-</main>
+    </main>
+    <script src="js/html5shiv.min.js"></script>
 </body>
 </html>
